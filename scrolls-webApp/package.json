@@ -1,0 +1,60 @@
+{
+  "name": "scrolls-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/codemod": "^4.0.2",
+    "@material-ui/core": "^4.3.3",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.3.3",
+    "axios": "^0.19.0",
+    "emotion": "^10.0.14",
+    "husky": "^3.0.4",
+    "immutable": "^4.0.0-rc.12",
+    "is-hotkey": "^0.1.4",
+    "moment": "2.18.1",
+    "react": "^16.9.0",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-device-detect": "^1.7.5",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "react-responsive-carousel": "^3.1.50",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.4.1",
+    "slate": "0.47.4",
+    "slate-react": "0.22.4",
+    "uuid": "^3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:production": "cp ./.env.production ./.env && react-scripts build && echo '/*    /index.html   200' > build/_redirects",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
+  }
+}

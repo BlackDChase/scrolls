@@ -6,6 +6,7 @@ import argparse
 import json
 import os
 import numpy as np
+#import tensorflow.compat.v1 as tf
 import tensorflow as tf
 import time
 import tqdm
