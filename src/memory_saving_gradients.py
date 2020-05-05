@@ -1,7 +1,6 @@
 from toposort import toposort
 import contextlib
 import numpy as np
-#import tensorflow.compat.v1 as tf
 import tensorflow as tf
 import tensorflow.contrib.graph_editor as ge
 import time
